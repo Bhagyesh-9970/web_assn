@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
+    <title>REGISTRATION</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet" href="registration.css">
 </head>
 <body>
     <div class="main-bar">
@@ -38,7 +38,7 @@
             </a>
 
             <a href="login.html">
-            <button class="different" style="width: 100px;">
+            <button class="buttons" style="width: 100px;">
                 LOGIN
             </button>
             </a>
@@ -50,27 +50,48 @@
             </a>
 
             <a href="registration.html">
-            <button class="buttons" style="width: 200px;">
+            <button class="different" style="width: 200px;">
                 REGISTRATION
             </button>
             </a>
         </list>
     </div>
 
-    <div class="login">
+    <div class="register">
         <form method="post" action="/action.php">
-            <h2 style="margin-left: 185px;margin-top: 25px;padding: 10px;font-size: 40px;">Login</h2>
+            <h2 style="margin-left: 267px;margin-top: 25px;padding: 10px;font-size: 45px;">Register</h2>
             <hr>
-            <input type="text" placeholder="Username" class="input-type">
-            <input type="password" placeholder="Password" class="input-type"><br><br>
-            <a href="" style="margin-left: 80px;font-size: 18px;">Forget password?</a><br>
-            <button class="login-button">
-                Login
+              <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="text" placeholder="Username" name="usrnm" required>
+              </div>
+            
+              <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="text" placeholder="Email" name="email" required>
+              </div>
+              
+              <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="Password" name="psw" required>
+              </div>
+
+              <div class="input-container">
+                <i class="fa fa-phone icon"></i>
+                <input type="number" placeholder="Mobile-number" name="num" required class="input-field">
+              </div>
+              
+              <textarea style="margin-left: 94px;width: 560px;font-size: 18px;margin-top: 16px;" name="address" rows="5" cols="50" placeholder=" Address" required></textarea><br><br><br>
+
+            <hr>
+        
+            <p style="margin-left: 89px;font-size: 19px;">By clicking Submit, you agree on our <a href="" style="color: blue;">Privacy policy for turning pages</a></p>
+            <button class="submit-button">
+                Submit
             </button>
-            <p style="margin-left: 148px;margin-top: 18px;font-size: 20px;margin-bottom: 30px;">Not a member ? <a href="">Signup</a></p>
+            
         </form>
     </div>
-
 
     <hr>
     <div class="bottom">
